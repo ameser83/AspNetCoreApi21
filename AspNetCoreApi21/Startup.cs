@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AspNetCoreApi21.Data;
+using AspNetCoreApi21.Data.Models;
+using Microsoft.AspNet.OData.Builder;
+using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Microsoft.OData.Edm;
 
 namespace AspNetCoreApi21
 {
@@ -25,6 +24,8 @@ namespace AspNetCoreApi21
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<BookContext>(opt => opt.UseInMemoryDatabase("BookLists"));
+            services.AddOData();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -35,13 +36,18 @@ namespace AspNetCoreApi21
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
+            app.UseMvc(b =>
             {
-                app.UseHsts();
-            }
+                b.MapODataServiceRoute("odata", "odata", GetEdmModel());
+            });
+        }
 
-            app.UseHttpsRedirection();
-            app.UseMvc();
+        private static IEdmModel GetEdmModel()
+        {
+            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+            builder.EntitySet<Book>("Books");
+            builder.EntitySet<Press>("Presses");
+            return builder.GetEdmModel();
         }
     }
 }
