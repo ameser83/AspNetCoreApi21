@@ -71,7 +71,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Sergio Villarreal** - *Initial work* - [PurpleBooth](https://github.com/ameser83)
+* **Sergio Villarreal** - *Initial work* - [ameser83](https://github.com/ameser83)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
