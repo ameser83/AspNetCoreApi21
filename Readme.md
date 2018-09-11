@@ -14,18 +14,12 @@ See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-Net Core 2.1 SDK
-Docker for windows or Mac 
-OData
-Entity Framework Core
-
-```
-Give examples
-```
+- Net Core 2.1 SDK
+- Docker for windows or Mac 
+- OData
+- Entity Framework Core
 
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
 
 Install Net Core 2.1 SDK Link: https://www.microsoft.com/net/download
 
@@ -74,14 +68,6 @@ Add additional notes about how to deploy this on a live system
 * [Docker](https://docs.docker.com/docker-for-windows/install/) - Container support
 * [OData](https://www.nuget.org/packages/Microsoft.AspNetCore.OData/) - OData for Net Core Support
 * [Entity Framework Core](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) - Entity Framework for Net Core Support
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-...
 
 ## Authors
 
