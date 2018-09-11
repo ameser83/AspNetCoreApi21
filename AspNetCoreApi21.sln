@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApi21", "AspNetCoreApi21\AspNetCoreApi21.csproj", "{A3EAC291-0D70-4907-BB60-23ECD576413C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreApi21", "AspNetCoreApi21\AspNetCoreApi21.csproj", "{A3EAC291-0D70-4907-BB60-23ECD576413C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApi21.Data", "AspNetCoreApi21.Data\AspNetCoreApi21.Data.csproj", "{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreApi21.Data", "AspNetCoreApi21.Data\AspNetCoreApi21.Data.csproj", "{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDAD0A08-E22C-40F7-BA50-BD90531BF5EC}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
