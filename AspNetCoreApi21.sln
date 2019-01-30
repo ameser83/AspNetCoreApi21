@@ -3,14 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreApi21", "AspNetCoreApi21\AspNetCoreApi21.csproj", "{A3EAC291-0D70-4907-BB60-23ECD576413C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApi21", "AspNetCoreApi21\AspNetCoreApi21.csproj", "{A3EAC291-0D70-4907-BB60-23ECD576413C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreApi21.Data", "AspNetCoreApi21.Data\AspNetCoreApi21.Data.csproj", "{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApi21.Data", "AspNetCoreApi21.Data\AspNetCoreApi21.Data.csproj", "{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDAD0A08-E22C-40F7-BA50-BD90531BF5EC}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3EFD3BD3-4296-49D7-AC00-D686B11310F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6AEC334-3C6D-4B7D-9EBD-3056DCA6A51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFD3BD3-4296-49D7-AC00-D686B11310F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFD3BD3-4296-49D7-AC00-D686B11310F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFD3BD3-4296-49D7-AC00-D686B11310F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFD3BD3-4296-49D7-AC00-D686B11310F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

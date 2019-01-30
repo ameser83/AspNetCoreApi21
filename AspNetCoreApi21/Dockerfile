@@ -1,9 +1,11 @@
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+#FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM microsoft/dotnet AS base
 WORKDIR /app
 EXPOSE 50121
 EXPOSE 44398
 
-FROM microsoft/dotnet:2.1-sdk AS build
+#FROM microsoft/dotnet:2.1-sdk AS build
+FROM microsoft/dotnet AS build
 WORKDIR /src
 COPY ["AspNetCoreApi21/AspNetCoreApi21.csproj", "AspNetCoreApi21/"]
 RUN dotnet restore "AspNetCoreApi21/AspNetCoreApi21.csproj"
